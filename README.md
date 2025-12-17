@@ -1,38 +1,59 @@
-# sv
+# Installationsanleitung Svelte
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+## Node
+Node.js ist notwendig, da es die Laufzeit bereitstellt, die benötigt wird, um JavaScript bzw. TypeScript außerhalb des Browsers laufen zu lassen
+und npm als Packagemanager installiert.
+Solltet ihr Node.js noch nicht installiert haben, dann sollte folgende Anleitung befolgt werden:
 
-## Creating a project
+1. Downloade das passende Installationspaket der aktuellsten LTS Version unter https://nodejs.org/en/download/ . Falls du einen Mac mit einem M-Prozessor besitzt, wähle als Architektur ARM64.
+Bei den meisten Windows-Rechner sollte x86 ausgewählt werden, solange es sich nicht um einen neuen Rechner mit ARM-Prozessor handelt.   
+2. Installation durchklicken (Standard-Einstellungen reichen)
 
-If you're seeing this, you've probably already done this step. Congrats!
+Prüfen, ob Node korrekt installiert ist im Terminal/Powershell:
 
-```sh
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+``` powershell
+node -v
+npm -v
 ```
 
-## Developing
+Die Ausgabe sollte ungerfähr so aussehen:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```
+25.2.1
+11.6.2
+```
 
-```sh
+
+## Visual Studio Code
+Als IDE empfehlen wir Visual Studio Code, wobei auch eine andere IDE benutzt werden kann, jedoch kein Support von unserer Seite aus geleistet werden kann.
+Wenn ihr VSC benutzt, installiert bitte folgendes Plugin:
+* Svelte for VS Code (von Svelte) -> Syntax-Highlighting, Autocomplete, Fehleranzeige
+
+Download: https://code.visualstudio.com/
+
+## Beispiel-Projekt starten
+
+Um zu Testen, ob Svelte ordnungsgemäß auf deinem Rechner läuft, haben wir ein Test-Repository erstellt.
+Klone dir dazu mit folgendem Befehl das Repo "svelte_installation_test" (dazu muss git installiert sein):
+
+```powershell
+
+git clone git@github.com:justinsingh024/svelte_installation_test.git
+
+```
+
+Wechsle in das Verzeichnis "svelte_installation_test" und führe folgende Befehle aus:
+
+```powershell
+
+npm i
 npm run dev
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
+Danach wird dir unter http://localhost:5173/ eine Willkommensseite angezeigt. Ist das der Fall, war die Installation erfolgreich.
 
-## Building
 
-To create a production version of your app:
+## Support
+Bei Fragen nutzt gerne das Forum, um uns zu erreichen.
 
-```sh
-npm run build
-```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
