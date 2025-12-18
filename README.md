@@ -5,7 +5,7 @@ Node.js ist notwendig, da es die Laufzeit bereitstellt, die benötigt wird, um J
 und npm als Packagemanager installiert.
 Solltet ihr Node.js noch nicht installiert haben, dann sollte folgende Anleitung befolgt werden:
 
-1. Downloade das passende Installationspaket der aktuellsten LTS Version unter https://nodejs.org/en/download/ . Falls du einen Mac mit einem M-Prozessor besitzt, wähle als Architektur ARM64.
+1. Downloade das passende Installationspaket der aktuellsten (Current) Version unter https://nodejs.org/en/download/ . Falls du einen Mac mit einem M-Prozessor besitzt, wähle als Architektur ARM64.
 Bei den meisten Windows-Rechner sollte x86 ausgewählt werden, solange es sich nicht um einen neuen Rechner mit ARM-Prozessor handelt.   
 2. Installation durchklicken (Standard-Einstellungen reichen) Hinweis: Falls der Installer nach einer automatischen Installation von notwendigen Tools (wie z.B. Python) fragt, kann dies abgewählt bleiben.
 
