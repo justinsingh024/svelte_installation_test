@@ -38,7 +38,7 @@ Klone dir dazu mit folgendem Befehl das Repo "svelte_installation_test" (dazu mu
 
 ```powershell
 
-git clone git@github.com:justinsingh024/svelte_installation_test.git
+git clone https://github.com/justinsingh024/svelte_installation_test.git
 
 ```
 
